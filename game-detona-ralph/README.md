@@ -1,5 +1,3 @@
-## Neste repositório, você encontrará um jogo divertido baseado no famoso filme "Detona Ralph".
-
 ### Tecnologias Utilizadas
 
 - HTML5 e CSS3 para a estrutura e aparência do jogo.
@@ -16,8 +14,6 @@
 2. Abra o arquivo `index.html` em seu navegador web.
 3. Use as setas direcionais para mover o personagem e a barra de espaço para interagir.
 4. Divirta-se explorando e coletando moedas, mas fique atento aos inimigos!
-
-### Também é possível acessar o jogo por ![aqui](https://vanderleyoliveira.github.io/detona-ralph-game/)
 
 ### Créditos
 
