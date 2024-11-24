@@ -1,13 +1,12 @@
-# Jogo da Memória 📝
+# Jogo da Memória
 
-### Tecnologias Utilizadas
+### Tecnologias Utilizadas:
 
-- HTML5 para criar a estrutura do jogo. 
-- CSS3 para aparência do jogo.
-- JavaScript para a lógica de programação e interatividade.
+- HTML5
+- CSS3
+- JavaScript
 
-
-### Como Jogar
+### Como Jogar:
 
 1. Clone este repositório para sua máquina local.
 2. Abra o arquivo `index.html` em seu navegador web.
@@ -16,7 +15,7 @@
 
 <p style="font-weight: bold; font-size: 14px;"><span style="color: #f00;">OBS:</span> Pode ser que o jogo não funcione tão bem no seu navegador caso ele não seja: Microsoft Edge ou Google Chrome.</p>
 
-### Créditos
+### Créditos:
 
 Este jogo foi desenvolvido como parte de um projeto educacional da Digital Innovation One.
 
