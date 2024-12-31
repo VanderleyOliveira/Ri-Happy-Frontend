@@ -50,6 +50,7 @@ body {
     color: #000;
 }
 .project-content img {
+    object-fit: cover;
     width: 200px;
     height: 220px;
     border-radius: 8px 0 0 8px;
