@@ -3,104 +3,151 @@
 body {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    background-color: #202020;
-}
-
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-    width: 100%;
-}
-
-.div-header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-}
-.div-header img {
-    width: 333px;
-}
-
-.main {
-    height: 100%;
-    width: 100%;
-}
-
-.section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-    width: 100%;
-    margin: 20px auto;
-}
-
-.project-content {
-    display: flex;
-    width: 700px;
-    border-radius: 8px;
-    background-color: #fff;
-    color: #000;
-}
-.project-content img {
-    object-fit: cover;
-    width: 200px;
-    height: 220px;
-    border-radius: 8px 0 0 8px;
-}
-
-.project-details {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    gap: 8px;
-    margin: 8px;
-    position: relative;
-}
-.description-project{
-    padding-top: 1rem;
+    align-items: center;
+    background-color: #222;
+    min-height: 100vh;
+    /* line-height: 1.6; */
 }
 
-.btn-visu {
-    text-decoration: none;
-    color: #000;
-    background-color: #fff;
-    border: solid 2px #000;
-    text-align: center;
-    align-self: flex-end;
-    width: 114px;
-    height: 48px;
-    padding: 12px;
-    border-radius: 4px;
-    position: absolute;
-    bottom: 8px;
-    right: 24px;
-}
-.btn-visu:hover {
-    background-color: #000;
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: #fff;
+    padding: 20px;
+}
+header h1 {
+    margin-bottom: 10px;
+}
+header .logo {
+    max-width: 250px;
+    height: auto;
 }
 
-.footer {
-    background-color: #000;
-    color: #fff;
-    height: 38px;
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
     width: 100%;
-    padding: 6px 0;
-    text-align: center;
-}
-.footer a {
-    text-decoration: none;
-    font-weight: bold;
+    padding: 20px;
+    margin: 0 auto;
 }
 
-a {
-    cursor: var(--cursor-pointer);
+h3 {
+    color: #fff;
+    font-weight: 100;
+}
+
+.grid-container {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Style card */
+.card {
+    width: 190px;
+    background: #fff;
+    padding: .4em;
+    border-radius: 6px;
+}
+
+.card-image { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #333;
+    width: 100%;
+    height: 149px;
+    border-radius: 6px 6px 0 0;
+}
+.card-image:hover {
+    transform: scale(0.98);
+}
+.card-image img {
+    border-radius: 6px 6px 0 0;
+    width: calc(100% - 2px); /* 149px - 2px ???? */
+    height: 100%;
+}
+
+/* titulo dos cards */
+.title-project {
+    font-weight: 600;
+    color: #000;
+    padding: 7px;
+}
+
+/* link de acesso */
+.link-project {
+    text-align: end;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: #000;
+    padding: 10px 7px 0;
+}
+.link-project:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+.link-project a {
+    color: #e48116;
+    text-decoration: none;
+}
+.link-project a:visited {
+    color: #14ab3a;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+footer p {
+    margin-bottom: 10px;
+}
+footer a {
+    margin: 0 5px;
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover {
+    opacity: .5;
+}
+footer svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+/* Layout para dispositivos pequenos (mobile) */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Layout para dispositivos médios (tablet) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Layout para dispositivos grandes (desktop) */
+@media (min-width: 1025px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
