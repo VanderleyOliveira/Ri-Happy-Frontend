@@ -3,7 +3,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100dvh;
-    background-image: linear-gradient(160deg, rgba(34,34,34,1) 0%, rgba(68,68,68,1) 50%, rgba(34,34,34,1) 100%);
+    background-image: linear-gradient(160deg, rgba(34, 34, 34, 1) 0%, rgba(68, 68, 68, 1) 50%, rgba(34, 34, 34, 1) 100%);
     color: #fff;
     background-size: 200% 200%;
     animation: float 6s linear infinite alternate;
@@ -128,6 +128,11 @@ header .column span {
 }
 
 @keyframes float {
-    from{background-position: 0 0;}
-    to{background-position: 100% 100%;}
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 100% 100%;
+    }
 }
