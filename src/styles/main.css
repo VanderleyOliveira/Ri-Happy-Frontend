@@ -1,5 +1,3 @@
-@import url(./reset.css);
-
 body {
     display: flex;
     flex-direction: column;
@@ -7,7 +5,6 @@ body {
     align-items: center;
     background-color: #222;
     min-height: 100vh;
-    /* line-height: 1.6; */
 }
 
 /* Header */
@@ -16,10 +13,7 @@ header {
     flex-direction: column;
     align-items: center;
     color: #fff;
-    padding: 20px;
-}
-header h1 {
-    margin-bottom: 10px;
+    padding: 30px;
 }
 header .logo {
     max-width: 250px;
@@ -34,13 +28,14 @@ main {
     align-items: center;
     gap: 1rem;
     width: 100%;
-    padding: 20px;
+    padding: 0 20px 45px;
     margin: 0 auto;
 }
 
 h3 {
     color: #fff;
     font-weight: 100;
+    margin-bottom: 6px;
 }
 
 .grid-container {
@@ -48,7 +43,7 @@ h3 {
     gap: 16px;
     grid-template-columns: 1fr;
     max-width: 1200px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 /* Style card */
@@ -63,10 +58,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    background-color: #333;
     width: 100%;
-    height: 149px;
     border-radius: 6px 6px 0 0;
 }
 .card-image:hover {
@@ -74,8 +66,8 @@ h3 {
 }
 .card-image img {
     border-radius: 6px 6px 0 0;
-    width: calc(100% - 2px); /* 149px - 2px ???? */
-    height: 100%;
+    width: 100%;
+    max-height: 149px;
 }
 
 /* titulo dos cards */
@@ -89,18 +81,17 @@ h3 {
 .link-project {
     text-align: end;
     text-transform: uppercase;
-    font-size: 0.7em;
+    font-size: 0.8em;
     font-weight: 600;
     color: #000;
     padding: 10px 7px 0;
 }
-.link-project:hover {
-    opacity: .5;
-    cursor: pointer;
-}
 .link-project a {
     color: #e48116;
     text-decoration: none;
+}
+.link-project a:hover {
+    opacity: .5;
 }
 .link-project a:visited {
     color: #14ab3a;
@@ -135,6 +126,19 @@ footer svg {
 @media (max-width: 600px) {
     .grid-container {
         grid-template-columns: 1fr;
+    }
+    .card {
+        background: #fff;
+        padding: .4em;
+        border-radius: 6px;
+    }
+    .card-image:hover {
+        transform: scale(0.98);
+    }
+    .card-image img {
+        border-radius: 6px 6px 0 0;
+        width: 100%;
+        max-height: 149px;
     }
 }
 
