@@ -5,7 +5,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #fc1e8a;
+  background: #222;
   user-select: none;
 }
 
@@ -24,6 +24,7 @@ body {
     #fdeff9 100%
   );
   padding: 40px 60px;
+  border-radius: 16px;
 }
 
 h2 {
@@ -39,6 +40,7 @@ h2 {
   color: #000;
   background-color: #fff;
   border: none;
+  border-radius: 8px;
   font-size: 1.5em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -69,6 +71,7 @@ h2 {
   align-items: center;
   justify-content: center;
   background-color: #fff;
+  border-radius: 8px;
 
   font-size: 3em;
   transform: rotateY(180deg);
@@ -84,6 +87,7 @@ h2 {
   transition: 0.25s;
   transform: rotateY(0deg);
   backface-visibility: hidden;
+  border-radius: 8px;
 }
 
 .item.boxOpen {
