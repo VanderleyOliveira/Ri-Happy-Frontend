@@ -1,7 +1,8 @@
-# Ri Happy Front-end
-Esse repositório contém todos os desafios de projetos que fiz no `Bootcamp de Front-End` da [Ri Happy](https://www.rihappy.com.br) em parceria com a [DIO](www.dio.me). 
+# Ri Happy - Front-end do Zero
+Bootcamp de Front-End realizado pela [DIO](www.dio.me) em parceria com a [Ri Happy](https://www.rihappy.com.br). 
 
-Confira todos eles dentro da pasta `projects`(ela está dentro da pasta `src`). Nela também é possível encontrar mais detalhes sobre cada projeto incluido as tecnologias e ferramentas utilizadas em cada desenvolvimento.
+<br>
 
-##
-#### Clique [AQUI!](https://vanderleyoliveira.github.io/Ri-Happy-Frontend/) e acesse a visualização geral dos projetos!
+Os projetos desenvolvidos durante o bootcamp podem ser encontrados dentro da pasta `projects`, em `src`, ou acessado o site: 
+
+[Desafios de Projetos - Ri Happy](https://vanderleyoliveira.github.io/Ri-Happy-Frontend/)
