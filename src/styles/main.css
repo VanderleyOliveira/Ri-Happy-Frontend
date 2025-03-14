@@ -8,6 +8,7 @@ body {
 }
 
 /* Header */
+
 header {
     display: flex;
     flex-direction: column;
@@ -15,12 +16,14 @@ header {
     color: #fff;
     padding: 30px;
 }
+
 header .logo {
     max-width: 250px;
     height: auto;
 }
 
 /* Main */
+
 main {
     display: flex;
     flex-direction: column;
@@ -47,57 +50,42 @@ h3 {
 }
 
 /* Style card */
+
 .card {
-    width: 200px;
+    max-width: 200px;
     background: #fff;
     padding: .4em;
     border-radius: 6px;
+    text-decoration: none;
 }
 
-.card-image { 
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-image {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 100%;
+    width: 100%;
     border-radius: 6px 6px 0 0;
 }
-.card-image:hover {
-    transform: scale(0.98);
-}
+
 .card-image img {
-    border-radius: 6px 6px 2px 2px;
+    object-fit: cover;
+    object-position: center;
     width: 100%;
-    max-height: 149px;
+    border-radius: 6px 6px 2px 2px;
 }
 
-/* titulo dos cards */
 .title-project {
     font-weight: 600;
     color: #000;
-    padding: 7px;
-}
-
-/* link de acesso */
-.link-project {
-    text-align: end;
-    text-transform: uppercase;
-    font-size: 0.8em;
-    font-weight: 600;
-    color: #000;
-    padding: 10px 7px 0;
-}
-.link-project a {
-    color: #e48116;
-    text-decoration: none;
-}
-.link-project a:hover {
-    opacity: .5;
-}
-.link-project a:visited {
-    color: #14ab3a;
+    margin: 7px 0 7px 7px;
 }
 
 /* Footer */
+
 footer {
     width: 100%;
     background-color: #333;
@@ -105,40 +93,52 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
 footer p {
     margin-bottom: 10px;
 }
+
 footer a {
     margin: 0 5px;
     color: #fff;
     text-decoration: none;
 }
+
 footer a:hover {
     opacity: .5;
 }
+
 footer svg {
     width: 24px;
     height: 24px;
     fill: currentColor;
 }
 
-/* Layout para dispositivos pequenos (mobile) */
-@media (max-width: 600px) {
+/* Layout para dispositivos grandes (desktop) */
+@media screen and (min-width: 1025px) {
     .grid-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 /* Layout para dispositivos médios (tablet) */
-@media (min-width: 601px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Layout para dispositivos grandes (desktop) */
-@media (min-width: 1025px) {
+/* Layout para dispositivos pequenos (mobile) */
+@media screen and (max-width: 480px) {
+    main {
+        padding: 0 40px;
+    }
+
+    .card:hover {
+        transform: scale(1);
+    }
+
     .grid-container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
