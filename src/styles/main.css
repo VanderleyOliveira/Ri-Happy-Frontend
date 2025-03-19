@@ -131,7 +131,7 @@ footer svg {
 /* Layout para dispositivos pequenos (mobile) */
 @media screen and (max-width: 480px) {
     main {
-        padding: 0 40px;
+        padding: 0 40px 40px;
     }
 
     .card:hover {
